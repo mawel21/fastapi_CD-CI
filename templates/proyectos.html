@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partidos</title>
+    <link rel="stylesheet" href="{{ url_for('static' , path='css/proyectos.css')}}">
+    
+
+</head>
+<body>
+    <h1 id="A"> PARTIDOS DE LA JORNADA </h1>
+    <ol>
+        <li> <span class="negrita"> Últimas grabaciones </span>
+            <ul> 
+                <li > Rita Payés -> <a href="#resumenA" class="a1"> Ver Resumen </a></li><br>
+                <li> Young Thug -> <a href="#resumenB" class="a1"> Ver Resumen </a></li><br>
+            </ul>
+        </li> 
+        <li> <span class="negrita"> Más escuchadas </span>
+            <ul> 
+                <li> C Tangana -> <a href="#resumenC" class="a1"> Ver Resumen </a></li><br>
+                <li> Tyler the Creator ->    <a href="#resumenD" class="a1"> Ver Resumen </a></li><br>
+            </ul>
+        </li>
+    </ol>
+    <h1> RESUMENES </h1>
+    <h3 id="resumenA"> Rita Payés </h3>
+    <p> <iframe width="560" height="315" src="https://www.youtube.com/embed/ZVEeAxeyAPU?si=Lj0Ohxp8sg0rtDWK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </p>
+    <h3 id="resumenB"> Young Thug </h3>
+    <p> <iframe width="560" height="315" src="https://www.youtube.com/embed/SAROJPnd_s8?si=LWONFbqgAqk1PV3O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </p>
+    <h3 id="resumenC"> C Tangana </h3>
+    <p> <iframe width="560" height="315" src="https://www.youtube.com/embed/SW6L_lTrIFg?si=ZD4JCMQmTf2xBOht" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </p>
+    <h3 id="resumenD"> Tyler The Creator </h3>
+    <p> <iframe width="560" height="315" src="https://www.youtube.com/embed/N1w-hDiJ4dM?si=Wc643Ls0rElv7vGX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </p>
+
+    <h3 id="btn">
+        <a class="abajo" href="#A"> Ir arriba</a>
+        <a class="abajo" href="{{ url_for('index') }}"> Ir a inicio</a>
+    </h3>
+</body>
+</html>
